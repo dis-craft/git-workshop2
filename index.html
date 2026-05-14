@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DISCRAFT</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#0f0f0f;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    nav{
+      width:100%;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:fixed;
+      top:0;
+      left:0;
+      backdrop-filter:blur(10px);
+      background:rgba(0,0,0,0.3);
+      z-index:1000;
+    }
+
+    .logo{
+      font-size:1.5rem;
+      font-weight:bold;
+      letter-spacing:2px;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:30px;
+    }
+
+    nav ul li a{
+      text-decoration:none;
+      color:white;
+      transition:0.3s;
+    }
+
+    nav ul li a:hover{
+      color:#00bfff;
+    }
+
+    .hero{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:0 10%;
+      background:
+      radial-gradient(circle at top left,#1f1f1f,#0f0f0f);
+    }
+
+    .hero-content h1{
+      font-size:4rem;
+      margin-bottom:20px;
+      line-height:1.1;
+    }
+
+    .hero-content h1 span{
+      color:#00bfff;
+    }
+
+    .hero-content p{
+      max-width:700px;
+      margin:auto;
+      font-size:1.1rem;
+      color:#cfcfcf;
+      line-height:1.7;
+    }
+
+    .buttons{
+      margin-top:35px;
+      display:flex;
+      justify-content:center;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:14px 28px;
+      border:none;
+      border-radius:40px;
+      cursor:pointer;
+      font-size:1rem;
+      transition:0.3s;
+      text-decoration:none;
+    }
+
+    .primary{
+      background:#00bfff;
+      color:black;
+      font-weight:bold;
+    }
+
+    .primary:hover{
+      transform:translateY(-3px);
+      box-shadow:0 10px 25px rgba(0,191,255,0.4);
+    }
+
+    .secondary{
+      border:1px solid #444;
+      color:white;
+      background:transparent;
+    }
+
+    .secondary:hover{
+      background:#1c1c1c;
+    }
+
+    .glow{
+      position:absolute;
+      width:400px;
+      height:400px;
+      background:#00bfff;
+      filter:blur(180px);
+      opacity:0.15;
+      border-radius:50%;
+      top:-100px;
+      right:-100px;
+      z-index:-1;
+    }
+
+    @media(max-width:768px){
+
+      nav ul{
+        display:none;
+      }
+
+      .hero-content h1{
+        font-size:2.5rem;
+      }
+
+      .hero-content p{
+        font-size:1rem;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="glow"></div>
+
+  <nav>
+    <div class="logo">DISCRAFT</div>
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Research</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h1>
+        Building Ideas Into
+        <span>Reality</span>
+      </h1>
+
+      <p>
+        Developer. Researcher. Builder.  
+        Exploring technology, design, AI, systems, and ambitious ideas
+        that push beyond ordinary boundaries.
+      </p>
+
+      <div class="buttons">
+        <a href="#" class="btn primary">Explore Work</a>
+        <a href="#" class="btn secondary">Contact Me</a>
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
